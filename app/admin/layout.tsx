@@ -3,7 +3,7 @@ import "@/styles/globals.css";
 import { Metadata } from "next";
 import { siteConfig } from "@/config/site";
 import { fontSans } from "@/config/fonts";
-import { Providers } from "./providers";
+import { Providers } from "../providers";
 import { Navbar } from "@/components/Navbar";
 import { Link } from "@nextui-org/link";
 import clsx from "clsx";
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+export default function AdminLayout({
   children,
   isAdmin,
 }: {
